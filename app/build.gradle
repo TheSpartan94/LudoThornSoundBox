@@ -117,8 +117,8 @@ android {
 
     defaultConfig {
         applicationId "net.ddns.andrewnetwork.ludothornsoundbox"
-        versionName "2.16"
-        versionCode 22
+        versionName "2.2"
+        versionCode 23
         minSdkVersion 19
         targetSdkVersion 29
         multiDexEnabled true
