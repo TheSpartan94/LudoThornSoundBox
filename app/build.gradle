@@ -1,4 +1,4 @@
-apply plugin: 'com.android.application'
+                                           apply plugin: 'com.android.application'
 apply plugin: 'com.google.gms.google-services'
 apply plugin: 'com.google.firebase.crashlytics'
 
@@ -82,7 +82,7 @@ android.productFlavors.whenObjectAdded { flavor ->
 
 
 android {
-    compileSdkVersion 29
+    compileSdkVersion 30
     flavorDimensions 'version'
 
     signingConfigs {
@@ -120,7 +120,7 @@ android {
         versionName "2.2"
         versionCode 23
         minSdkVersion 19
-        targetSdkVersion 29
+        targetSdkVersion 30
         multiDexEnabled true
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables.useSupportLibrary = true
@@ -169,11 +169,11 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation 'androidx.appcompat:appcompat:1.1.0'
-    implementation 'com.google.android.material:material:1.2.0-alpha06'
-    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.material:material:1.3.0-alpha03'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
     implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.15'
-    implementation 'com.google.android.gms:play-services-ads:19.1.0'
+    implementation 'com.google.android.gms:play-services-ads:19.5.0'
     implementation 'com.github.michaelye.easydialog:easydialog:1.4'
     implementation group: 'androidx.preference', name: 'preference', version: '1.1.1'
     implementation 'com.android.support:multidex:1.0.3'
@@ -181,10 +181,10 @@ dependencies {
     implementation('com.google.apis:google-api-services-youtube:v3-rev205-1.24.1') {
         exclude group: 'org.apache.httpcomponents'
     }
-    implementation 'com.google.firebase:firebase-messaging:20.1.7'
+    implementation 'com.google.firebase:firebase-messaging:21.0.0'
     testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'androidx.test:runner:1.3.0-beta01'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0-beta01'
+    androidTestImplementation 'androidx.test:runner:1.3.1-alpha02'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0-alpha02'
     implementation 'io.reactivex.rxjava2:rxjava:2.2.10'
     implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
     implementation 'com.google.dagger:dagger:2.27'
@@ -194,7 +194,7 @@ dependencies {
     implementation 'com.google.code.gson:gson:2.8.5'
 
     //Firebase Crashlytics.
-    implementation 'com.google.firebase:firebase-analytics:17.4.1'
-    implementation 'com.google.firebase:firebase-crashlytics:17.0.0'
+    implementation 'com.google.firebase:firebase-analytics:18.0.0'
+    implementation 'com.google.firebase:firebase-crashlytics:17.3.0'
 
 }
